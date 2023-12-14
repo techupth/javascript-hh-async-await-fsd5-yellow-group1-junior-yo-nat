@@ -13,4 +13,13 @@ let getJohnProfile = () => {
     );
   });
 };
+
 // Start coding here
+let profilePromise = getJohnProfile();
+profilePromise
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => {
+    console.error(error);
+  });

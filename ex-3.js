@@ -33,3 +33,14 @@ let getJohnOrders = () => {
 };
 
 // Start coding here
+let profilePromise = getJohnProfile();
+
+profilePromise.then((profile) => {
+  console.log(profile);
+
+  let ordersPromise = getJohnOrders();
+
+  ordersPromise.then((orders) => {
+    console.log(orders);
+  });
+});
