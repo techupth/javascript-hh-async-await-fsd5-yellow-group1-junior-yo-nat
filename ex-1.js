@@ -14,3 +14,5 @@ let getJohnProfile = () => {
   });
 };
 // Start coding here
+const getJohnProfiles = await getJohnProfile();
+console.log(getJohnProfiles);
